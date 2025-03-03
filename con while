@@ -1,0 +1,29 @@
+x=True
+print(type(x))
+if x==True:
+    print("siempre dice la verdad")
+else:
+    print("es mentiroso") 
+
+while x==True:
+    print("es verdad infinita")    
+i=0
+while i<=10:
+      if i%2==0:
+          print(i)
+      i+=1
+n1=num=int(input("ingrese numero"))
+n2=num=int(input("ingrese numero"))
+mayot=0
+menor=0
+
+if n1<n2:
+    menor,mayor=n1,n2
+else: 
+    menor;mayor=n2,n1
+cont=0
+rta=menor
+while rta<=mayor:
+    rta+=menor
+    cont+=1
+print(f"se sumo {cont} veces")   
