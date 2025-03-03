@@ -8,3 +8,9 @@ if start<tope:
                print(i)
               
     
+num=int(input("ingrese numero"))
+for i in range(num):
+    print(i,end="-")
+print()
+for i in range(num, 0.-1):
+    print (i,end="-")
