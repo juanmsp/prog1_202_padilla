@@ -1,0 +1,225 @@
+Códigos de hoy
+
+[1:47 p.m., 11/3/2025] +57 323 2115321: def fibonacci(n):
+    a, b = 0, 1
+    contador = 0
+    while contador < n:
+        print(a, end=" ")
+        temp = a + b
+        a = b
+        b = temp
+        contador += 1
+    print()
+
+n = int(input("Ingrese la cantidad de términos de Fibonacci: "))
+fibonacci(n)
+[1:47 p.m., 11/3/2025] +57 323 2115321: def suma_progresion_aritmetica(a1, d, n):
+    suma = 0
+    contador = 0
+    termino = a1
+    while contador < n:
+        suma += termino
+        termino += d
+        contador += 1
+    return suma
+
+a1 = int(input("Ingrese el primer término: "))
+d = int(input("Ingrese la diferencia común: "))
+n = int(input("Ingrese el número de términos: "))
+
+print("La suma de la progresión aritmética es:", suma_progresion_aritmetica(a1, d, n))
+[1:47 p.m., 11/3/2025] +57 323 2115321: def triangulo_numerico(n):
+    fila = 1
+    while fila <= n:
+        print(str(fila) * fila)
+        fila += 1
+
+n = int(input("Ingrese el número de filas: "))
+triangulo_numerico(n)
+[1:47 p.m., 11/3/2025] +57 323 2115321: def suma_digitos(n):
+    suma = 0
+    while n > 0:
+        suma += n % 10
+        n = n // 10
+    return suma
+
+n = int(input("Ingrese un número: "))
+print("La suma de los dígitos es:", suma_digitos(n))
+[1:47 p.m., 11/3/2025] +57 323 2115321: def collatz(n):
+    while n != 1:
+        print(n, end=" → ")
+        if n % 2 == 0:
+            n = n // 2
+        else:
+            n = 3 * n + 1
+    print(1)
+
+n = int(input("Ingrese un número: "))
+collatz(n)
+[1:47 p.m., 11/3/2025] +57 323 2115321: def fibonacci_hasta_x(x):
+    a, b = 0, 1
+    while a <= x:
+        print(a, end=" ")
+        temp = a + b
+        a = b
+        b = temp
+    print()
+
+x = int(input("Ingrese el valor límite: "))
+fibonacci_hasta_x(x)
+[1:47 p.m., 11/3/2025] +57 323 2115321: import random
+
+def adivina_el_numero():
+    numero_secreto = random.randint(1, 100)
+    intento = 0
+    while intento != numero_secreto:
+        intento = int(input("Adivina el número (entre 1 y 100): "))
+        if intento < numero_secreto:
+            print("El número es mayor.")
+        elif intento > numero_secreto:
+            print("El número es menor.")
+    print("¡Felicidades! Adivinaste el número.")
+
+adivina_el_numero()
+[1:47 p.m., 11/3/2025] +57 323 2115321: def factores_primos(n):
+    i = 2
+    while n > 1:
+        while n % i == 0:
+            print(i, end=" ")
+            n = n // i
+        i += 1
+
+n = int(input("Ingrese un número: "))
+factores_primos(n)
+[1:47 p.m., 11/3/2025] +57 323 2115321: def mcm(a, b):
+    m = max(a, b)
+    while True:
+        if m % a == 0 and m % b == 0:
+            return m
+        m += 1
+
+a = int(input("Ingrese el primer número: "))
+b = int(input("Ingrese el segundo número: "))
+
+print("El MCM de", a, "y", b, "es:", mcm(a, b))
+
+códigos de ayer
+
+def numeros_positivos():
+    cont = 0
+    numero=1 
+    while numero>0:    
+        numero=int(input("ingrese numeros"))
+        cont+=1
+    return cont-1
+print(numeros_positivos())       
+
+
+
+
+def cual_mes(dias):
+    if dias<=31:
+        return "enero"
+    elif dias<=59:
+        return "febrero"
+    elif dias<=90:
+        return "marzo"
+    elif dias<=120:
+        return "abril"
+    elif dias<=151:
+        return "mayo"
+    elif dias<=181:
+        return"junio"
+    elif dias<=212:
+        return "julio"
+    elif dias<=243:
+        return "agosto"
+    elif dias<=273:
+        return "septiembre"
+    elif dias<=304:
+        return "octubre"
+    elif dias<=334:
+        return "noviembre"
+    elif dias<=365:
+        return "diciembre"
+    
+print(cual_mes(200))
+print(cual_mes(55))
+
+# 0. Determinar los divisores de un número del divisores(n):
+return [i for i in range(l, n • 1) if n ¥ i == 0]
+
+# 3. Determinar si un número es perfecto
+def es_perfecto(n):
+return sun(1 for i  in  range( 1, n) 1f n 's 1 == 0)  == n
+
+# 5. Números primos entre t y 1000 ó•f pr 1«os_ha s ta_1000( ):
+pr iros = f
+fo r num in  range(2, 100t ):
+if  a11(num k i  ! = 0 for  i  in range(2, int( no “* 0.5) + 1 ) ): pr Unos. append( num)
+return pr1mos
+
+# 7. Encontr ar el meno r número cuya suma de 1os prioe ros naturales exceda un máx1oo dado
+ríe f  menor_nume ro_suma_exceda (m):
+suma, n = 0, 0 while suma a= m:
+n += 1
+suma += n
+return n
+
+# 9. Po tenc1a s1n pow
+¢Ief pot entía( x , n): resu1tado = t
+for  „ in range(n):
+resultado *= x return r esu1tado
+# 11. Cocient e y res iduo s1n div1s1ón n1 módulo
+rBf coc 1ente_residuo(a , b): coc 1ente , res iduo = 0, a wh11e res iduo >= b:
+res1duo -= b cociente += 1
+return cociente ,  r es iduo
+
+# 13. Número en orden inver so
+Of  numero_1 nver so( n):
+r et urn in t(s t r( n ) [ : : - 1 ] )
+
+# 05. Pirámide numérica def piramide(n):
+fo r i  in  range(n, 0, -1 ):
+print (" “. j oin(str(j ) for j in range( 1 ,  1 + 1 ) ) )
+
+# 0. Número medio sin operadores lógicos def numero_medio(a, b, c):
+return sorted( (a , b , c] ) [ 1 ]
+
+# 3. Contar cifras de un número Wf cantar_cifras (n) :
+return len(str(n))
+
+  1 
+ 
+4 S . Juego de pr egunta s "Sź" o "No" rlef j uego„preguntas(respues t as ):
+pr egunta s = [
+"¿Co1ón descubr 1ó Aaér ica?",
+"¿La 1ndependenc 1a de Col ombia fue en el año ł 810?" , "¿The Doors fue un grupo de rock americano7"
+for i , r in  enuøer a te( respues tas ): if r . her( ) != "s 1" :
+return f”Juego terminado en la pregunt a {i+1 } " return " ; Ganast e el juego ! "
+# 7. Cź1culo de sa1ar io
+¢Ief ca1cu1ar_s atario(horas ): tarifa = 2600
+ext ra = 5000
+return horas ” ( ext ra if  horas > 40 e1se tar ifa)
+
+#9. Costo de una llamada telefónica Œf costo_llamada(minutos):
+return 200 a (minutos - 3) * SO if minutos > 3 else 200
+
+# 11. Desg1ose de d1nero en b111e t es def desg1osar_d1nero(vafor ):
+b111etes = [ 50000, 20000,  1 0000, 5000, 2000, 1000]
+r esu1t ado = { }
+for b 1n b111et es :
+r esult ado[b] = va1or // b va1or &= b
+return r esultado
+
+# 13. Conver t 1r segundos en horas , oinut as y segundos
+¢ 'f convertir_t1eøpo(segundos ): h = segundos // 3600
+m = ( segundos S. 3600) // 60 s = segundos S 60
+return h, n, s
+# 1S. Fecha de Pascua para un año dado def ca 1cu1ar_pascua(año):
+A = año & 19
+B = año k 4
+C = año g 7
+D = ( 19 * A • 24) X• 30
+E = (2 * B + 4 * C + 6 * D + 5) S 7 N = ( 22 * D • E )
+return f“La Pascua en {año) es el (N) de marzo“ if N *= 31 else f“La Pascua en (año} es el (N-31} de abril
